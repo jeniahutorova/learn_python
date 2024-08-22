@@ -20,7 +20,6 @@ for number in range(0, nr_numbers + 1):
 
 password_list = list(password)
 random.shuffle(password_list)
-print(password_list)
 random_password = ''.join(password_list)
 print(random_password)
 

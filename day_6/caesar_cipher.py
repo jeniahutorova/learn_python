@@ -29,6 +29,3 @@ while not game_over:
     if continue_game == "no":
         game_over = True
         print("Game is over!")
-   
-
-     

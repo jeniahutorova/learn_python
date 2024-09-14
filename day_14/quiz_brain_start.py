@@ -15,8 +15,8 @@ class QuizBrain:
             return False
     def check_answer(self, user_answer, correct_answer):
         if user_answer == correct_answer:
-            print(f"You got it right! Your score is {self.score}!")
             self.score += 1
+            print(f"You got it right! Your score is {self.score}!")
         else:
             print("That's wrong.")
         print(f"Your current score is: {self.score}/{self.question_number}\n")

@@ -17,6 +17,13 @@ class Snake:
         self.right()
         self.left()
     
+    def reset(self):
+        for segment in self.segments:
+            segment.goto(1000, 1000)
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
+    
     def up(self):
         if self.head.heading() != DOWN:
             self.head.setheading(90)

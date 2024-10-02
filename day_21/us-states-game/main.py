@@ -15,10 +15,7 @@ states = data.state.to_list()
 while len(guessed_states) < 50:
     state = turtle.textinput(f"{len(guessed_states)}/50 States Correct", "What's another state name?").title()
     if state == "Exit":
-        missing_states = []
-        for state in states:
-            if state not in guessed_states:
-                missing_states.append(state)
+        missing_states = [state for state in states if state not in guessed_states]
         ungessed_df = pandas.DataFrame(missing_states)
         ungessed_df.to_csv(r"C:\Users\jenia\Desktop\learn_python\day_21\us-states-game\ungessed_states.csv")
         break

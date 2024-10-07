@@ -7,7 +7,7 @@ def button_clicked():
     b_conversion.config(text = str(bytes_data))
 
 window = Tk()
-window.title("Bytes to Terabytes Calculator")
+window.title("Terabytes to Bytes Calculator")
 window.minsize(300, 200)
 window.config(padx=50, pady=50)
 
